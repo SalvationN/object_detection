@@ -21,7 +21,7 @@ pipeline_config_path=$output_dir/$config
 # rm -rvf $output_dir/*
 
 # 因为dataset里面的东西是不允许修改的，所以这里要把config文件复制一份到输出目录
-cp $dataset_dir/$config $pipeline_config_path
+cp $config $pipeline_config_path
 
 python ./object_detection/train.py --train_dir=$train_dir --pipeline_config_path=$pipeline_config_path
 
