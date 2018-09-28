@@ -433,7 +433,7 @@ def batch_multiclass_non_max_suppression(boxes,
       nmsed_boxlist, num_valid_nms_boxes = multiclass_non_max_suppression(
           per_image_boxes,
           per_image_scores,
-          score_thresh,
+          #score_thresh,
           iou_thresh,
           max_size_per_class,
           max_total_size,
