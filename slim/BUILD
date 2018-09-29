@@ -80,7 +80,7 @@ py_binary(
     ],
 )
 
-py_library(
+py_binary(
     name = "cifar10",
     srcs = ["datasets/cifar10.py"],
     deps = [
@@ -89,7 +89,7 @@ py_library(
     ],
 )
 
-py_library(
+py_binary(
     name = "flowers",
     srcs = ["datasets/flowers.py"],
     deps = [
@@ -98,7 +98,7 @@ py_library(
     ],
 )
 
-py_library(
+py_binary(
     name = "imagenet",
     srcs = ["datasets/imagenet.py"],
     deps = [
@@ -107,7 +107,7 @@ py_library(
     ],
 )
 
-py_library(
+py_binary(
     name = "mnist",
     srcs = ["datasets/mnist.py"],
     deps = [
@@ -715,22 +715,14 @@ py_binary(
     ],
 )
 
-py_library(
-    name = "eval_image_classifier_lib",
+py_binary(
+    name = "eval_image_classifier",
     srcs = ["eval_image_classifier.py"],
     deps = [
         ":dataset_factory",
         ":nets_factory",
         ":preprocessing_factory",
         # "//tensorflow",
-    ],
-)
-
-py_binary(
-    name = "eval_image_classifier",
-    srcs = ["eval_image_classifier.py"],
-    deps = [
-        ":eval_image_classifier_lib",
     ],
 )
 
