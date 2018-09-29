@@ -13,7 +13,7 @@ train_dir=$output_dir/train
 checkpoint_dir=$train_dir
 
 # config文件
-config=faster_rcnn_inception_resnet_v2.config
+config=faster_rcnn_resnet101_kitti.config
 pipeline_config_path=$output_dir/$config
 
 # 先清空输出目录，本地运行会有效果，tinymind上运行这一行没有任何效果
